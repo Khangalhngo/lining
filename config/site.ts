@@ -1,69 +1,63 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
-	navItems: [
-		{
-			label: "Home",
-			href: "/",
-		},
+  name: "Lining Mongolia",
+  description: "Make Your Own Way",
+  navItems: [
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Collections",
+      href: "/",
     },
     {
-      label: "Pricing",
+      label: "Woman",
+      href: "/docs",
+      dropdown: [
+        {
+          label: "Woman1",
+          href: "/docs",
+        },
+        {
+          label: "Woman2",
+          href: "/docs",
+        },
+      ],
+    },
+    {
+      label: "Man",
       href: "/pricing",
     },
     {
-      label: "Blog",
+      label: "Kids",
       href: "/blog",
     },
     {
       label: "About",
       href: "/about",
-    }
-	],
-	navMenuItems: [
-		{
-			label: "Profile",
-			href: "/profile",
-		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
-	],
-	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
-	},
+    },
+  ],
+  navMenuItems: [
+    {
+      label: "Collections",
+      href: "/",
+    },
+    {
+      label: "Woman",
+      href: "/docs",
+    },
+    {
+      label: "Man",
+      href: "/pricing",
+    },
+    {
+      label: "Kids",
+      href: "/blog",
+    },
+    {
+      label: "About",
+      href: "/about",
+    },
+  ],
+  links: {
+    sponsor: "https://instagram.com/hangobeats",
+  },
 };
