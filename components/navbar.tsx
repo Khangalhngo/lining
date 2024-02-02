@@ -21,6 +21,7 @@ import clsx from "clsx";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { HeartFilledIcon, SearchIcon } from "@/components/icons";
 import Image from "next/image";
+
 import {
   Dropdown,
   DropdownTrigger,
@@ -46,7 +47,7 @@ export const Navbar = () => {
           {siteConfig.navItems.map((item) => {
             if (item.dropdown) {
               return (
-                <NavbarItem>
+                <NavbarItem key={item.label}>
                   <Dropdown backdrop="blur">
                     <DropdownTrigger>
                       <NextLink
@@ -90,13 +91,13 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
+        className="hidden lg:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden md:flex">
+        <NavbarItem className="">
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className="hidden md:flex">
+        <NavbarItem className="hidden lg:flex">
           <Button
             isExternal
             as={Link}
@@ -110,7 +111,7 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden  basis-1 pl-4" justify="end">
+      <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
         <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
@@ -119,9 +120,9 @@ export const Navbar = () => {
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link color={"foreground"} href="#" size="lg">
+              <NextLink color={"foreground"} href="#">
                 {item.label}
-              </Link>
+              </NextLink>
             </NavbarMenuItem>
           ))}
         </div>

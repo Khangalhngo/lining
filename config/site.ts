@@ -13,26 +13,47 @@ export const siteConfig = {
       href: "/docs",
       dropdown: [
         {
-          label: "Woman1",
-          href: "/docs",
+          label: "Women1",
+          href: "/woman1",
         },
         {
-          label: "Woman2",
-          href: "/docs",
+          label: "Women2",
+          href: "/women2",
         },
       ],
     },
     {
-      label: "Man",
-      href: "/pricing",
+      label: "Men",
+      href: "/men",
+      dropdown: [
+        {
+          label: "Men1",
+          href: "/men1",
+        },
+        {
+          label: "Men2",
+          href: "/men2",
+        },
+      ],
     },
+
     {
       label: "Kids",
-      href: "/blog",
+      href: "/kids",
+      dropdown: [
+        {
+          label: "Kids1",
+          href: "/kids1",
+        },
+        {
+          label: "Kids2",
+          href: "/kids2",
+        },
+      ],
     },
     {
-      label: "About",
-      href: "/about",
+      label: "New Arrivals",
+      href: "/new-arrivals",
     },
   ],
   navMenuItems: [
@@ -41,16 +62,16 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Woman",
-      href: "/docs",
+      label: "Women",
+      href: "/women",
     },
     {
-      label: "Man",
-      href: "/pricing",
+      label: "Men",
+      href: "/men",
     },
     {
       label: "Kids",
-      href: "/blog",
+      href: "/kids",
     },
     {
       label: "About",

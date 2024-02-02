@@ -78,7 +78,7 @@ export default function Home() {
           <HorizontalScrollCarousel />
         </div>
         <div className="row-start-4 max-h-screen">
-          <Image src={banner2} width={400} height={400} alt="haha" />
+          <Image src={banner2} width={400} height={400} alt="banner" />
         </div>
         <div className="row-start-5 max-h-screen">5</div>
       </div>

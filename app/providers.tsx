@@ -20,7 +20,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
   return (
     <NextUIProvider navigate={router.push}>
       <AnimatePresence>
-        <motion.div
+        {/* <motion.div
           key={pathname}
           initial="initialState"
           animate="animateState"
@@ -32,9 +32,9 @@ export function Providers({ children, themeProps }: ProvidersProps) {
             eexitState: {},
           }}
           className="base-page-size"
-        >
-          <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
-        </motion.div>
+        > */}
+        <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+        {/* </motion.div> */}
       </AnimatePresence>
     </NextUIProvider>
   );
